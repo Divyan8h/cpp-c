@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+void main()
+{
+int avg,m1,m2,m3;
+printf("enter marks of the all three subjects");
+scanf("%d %d %d",&m1,&m2,&m3);
+avg=(m1+m2+m3)/3;
+if(avg>=60)
+{
+    printf("first division");
+}
+else if(avg>=50 && avg<60)
+{
+    printf("second division");
+}
+else if(avg>=40 && avg<50)
+{
+    printf("third division");
+}
+else
+{
+    printf("fail");
+}
+return 0;
+}
