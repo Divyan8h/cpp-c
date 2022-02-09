@@ -1,0 +1,45 @@
+#include <stdio.h>
+/*
+Rs 4.89 per unit for the first 25 units, 
+Rs 5.4 per unit for the next 35 units, 
+Rs. 6.41 per unit for the next 40 units,
+Rs 7.16 per unit for the next 50 units, 
+Rs 7.33 per unit for the next 150 units 
+and Rs 8.92 per unit for anything above 300 units
+*/
+int main()
+{
+   float units, charge;
+   printf("Enter Units consumption:");
+   scanf("%f", &units);
+   
+   if(units<=25)
+   {
+       charge=units * 4.89;
+   }
+   else if(units>25 && units<=60)
+   {
+       charge=25*4.89 + (units - 25)*5.4;
+   }
+   else if(units>60 && units<=100)
+   {
+       charge=25*4.89 + 35*5.4 + (units-60)*6.41;
+   }
+   else if(units>100 && units<=150)
+   {
+       charge=25*4.89 + 35*5.4 + 40*6.41 + (units-100)*7.16;
+   }
+   else if(units>150 && units<=300)
+   {
+       charge=25*4.89 + 35*5.4 + 40*6.41 + 50*716 + (units-150)*7.33;
+   }
+   else
+   {
+       charge=25*4.89 + 35*5.4 + 40*6.41 + 50*716 + 150*7.33 + (units-300)*8.92;
+   }
+   
+   printf("Charge pay by customer is=%f", charge);
+    
+    
+    return 0;
+}
