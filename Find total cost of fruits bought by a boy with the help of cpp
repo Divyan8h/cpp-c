@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main()
+{
+   int apple_quantity=2;
+   int apple_cost=100;
+   int orange_quantity=1.5;
+   int orange_cost=6;
+   
+   int total_cost;
+   total_cost = (apple_quantity*apple_cost) + (orange_quantity*orange_cost);
+   printf("total cost of fruits is %d",total_cost);
+   
+    return 0;
+}
