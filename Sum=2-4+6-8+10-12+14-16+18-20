@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,n=20,s=0;
+   
+    for(int i=2;i<=n;i+=2)
+    {
+        if(i%4==0)
+        {
+            s=s-i;
+        }
+        else
+        {
+          s=s+i;  
+        }
+       
+    } printf("%d",s);
+
+    return 0;
+}
