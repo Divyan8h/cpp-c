@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int f1,f2,fib;
+    fib=f1=0;
+    f2=1;
+    printf("%d\n",fib);
+    
+    for(int i=0;i<10;i++)
+    {
+        f1=f2;
+        f2=fib;
+        fib=f1+f2;
+        printf("%d\n",fib);
+    }
+    
+
+
+    return 0;
+}
